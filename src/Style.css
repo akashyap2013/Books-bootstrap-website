@@ -80,7 +80,7 @@ header .row .col-md-5 img {
 header {
   background: #ff512f;
   /* fallback for old browsers */
-  background: var(--bggradient);
+  background: var(--Rubik); /* i think that should be awesome */
 }
 
 header .container .col-md-7 {
