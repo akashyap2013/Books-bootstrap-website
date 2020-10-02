@@ -283,7 +283,40 @@ header .container .col-md-7 p {
   padding: 2vmin 4.5vmin;
   margin: 1em;
 }
+.section-3 .desktop {
+    width: 300px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 95px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
 
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.section-3 .desktop:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.section-3 .desktop:focus {
+    outline: none;
+}
+.section-3 .desktop{
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+  }
 .section-3 .desktop h3 {
   font-size: 4vmin;
 }
