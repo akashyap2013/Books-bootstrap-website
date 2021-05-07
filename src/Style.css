@@ -1,6 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+  /* --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive; */
+  --Roboto: 'Roboto', sans-serif;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
 * {
   box-sizing: border-box;
+  font-family: var(--Roboto);
+
 }
 
 header,
@@ -8,18 +21,10 @@ section {
   overflow-x: hidden;
 }
 
-:root {
-  --Sniglet-font: "Sniglet", cursive;
-  --Rubik: "Rubik", cursive;
-  --Patua: "Patua One", cursive;
-  --Lobster: "lobster", cursive;
-  --light-black: #2e2c2caf;
-  --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
-  --light-gray: rgba(255, 255, 255, 0.877);
-}
+
 
 header a {
-  font-family: var(--Sniglet-font);
+  font-family: var(--Roboto);
   font-size: 0.9em;
   color: whitesmoke;
 }
@@ -63,19 +68,31 @@ header .navbar-brand {
 header .nav-link:hover {
   color: black;
 }
+header{
+  min-height:100vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
 
-header .row .col-md-7 {
+  display: flex;
+  align-items: center;
+}
+
+/* header .row .col-md-7 {
   padding: 22vmin 1vmin;
   padding-bottom: 35vmin;
 }
 
 header .row .col-md-5 {
   padding: 4.2vmin 1vmin;
-}
+} */
 
-header .row .col-md-5 img {
+/* header .row .col-md-5 img {
   width: 90%;
-}
+} */
 
 header {
   background: #ff512f;
@@ -128,10 +145,10 @@ header .container .col-md-7 p {
   top: 7vmin;
   left: -18vmin;
   background: white;
-  border-radius: 3px;
+  border-radius: 10px;
   text-align: left;
   padding: 13vmin 5vmin 20vmin 10vmin;
-  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);
   font-family: var(--Rubik);
   z-index: 1;
 }
@@ -214,7 +231,7 @@ header .container .col-md-7 p {
 .purchase > h1 {
   padding-top: 15vmin;
   padding-bottom: 0.1em;
-  font-family: var(--Lobster);
+  font-family: var(--Roboto);
 }
 
 .purchase > p {
@@ -354,9 +371,7 @@ footer .column i {
 
 /* It is Adjacent sibling combinator */
 
-footer .column i + i {
-  padding: 0 0.5em;
-}
+
 
 .sticky {
   position: fixed;
@@ -365,4 +380,9 @@ footer .column i + i {
   background: rgba(0, 0, 0, 0.815);
   z-index: 9999;
   transition: all 1.5s ease;
+}
+.footer-social-icon:hover{
+  transform: rotate(360deg);
+  transition: all 1.5s ease;
+  color: #ff512f;
 }
