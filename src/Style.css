@@ -16,6 +16,10 @@ section {
   --light-black: #2e2c2caf;
   --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
   --light-gray: rgba(255, 255, 255, 0.877);
+  
+  --color-default: #222222;
+  --color-primary: #0f0f0f;
+  --color-secondary: #f85a40;
 }
 
 header a {
@@ -325,37 +329,116 @@ header .container .col-md-7 p {
   width: 60%;
 }
 
-footer {
-  background: rgba(0, 0, 0, 0.815);
-  overflow-x: hidden;
-  padding: 14vmin 18vmin;
+.footer {
+  font-size: 14px;
+  background-color: var(--color-primary);
+  padding: 50px 0;
+  color: rgb(255, 253, 253);
 }
 
-footer p > span {
-  color: #ff512f;
+.footer .footer-info .logo {
+  line-height: 0;
+  margin-bottom: 25px;
 }
 
-footer input {
-  border: none !important;
+.footer .footer-info .logo img {
+  max-height: 40px;
+  margin-right: 6px;
 }
 
-footer input::placeholder {
-  color: white !important;
+.footer .footer-info .logo span {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: rgb(255, 253, 253);
+  font-family: var(--font-primary);
 }
 
-footer .input-group .input-group-text {
-  background: var(--bggradient);
-  border: none;
+.footer .footer-info p {
+  font-size: 14px;
+  font-family: var(--font-primary);
 }
 
-footer .column i {
-  color: #dd2476;
+.footer .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  color: rgb(255, 253, 253);
+  margin-right: 10px;
+  transition: 0.3s;
 }
 
-/* It is Adjacent sibling combinator */
+.footer .social-links a:hover {
+  color: #fff;
+  border-color: #fff;
+}
 
-footer .column i + i {
-  padding: 0 0.5em;
+.footer h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer .footer-links {
+  margin-bottom: 30px;
+}
+
+.footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-links ul i {
+  padding-right: 2px;
+  color: rgb(255, 253, 253));
+  font-size: 12px;
+  line-height: 0;
+}
+
+.footer .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer-links ul a {
+  color: rgb(255, 253, 253);
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+.footer .footer-links ul a:hover {
+  color: rgb(255, 253, 253));
+}
+
+.footer .footer-contact p {
+  line-height: 26px;
+}
+
+.footer .copyright {
+  text-align: center;
+}
+
+.footer .credits {
+  padding-top: 4px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.footer .credits a {
+  color:rgb(255, 253, 253);
 }
 
 .sticky {
